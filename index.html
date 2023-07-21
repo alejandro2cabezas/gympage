@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Mi primer pagina web</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>THE ADOBE STOCK GYM</h1>
+        <nav class="nav-xl">
+          <div>
+            <a href="/pages/clases.html/XtremeFitnesswithPhil.mp4">Clases</a>
+            <a href="/pages/Planes.html/Planes.jpg">Planes</a>
+          </div>
+          <div>
+            <a href="#compraOnline">Compra online</a>
+            <a href="#contact"> Contactanos </a>
+          </div>
+        </nav>
+        <nav class="nav-sm">
+          <img
+            src="https://www.svgrepo.com/show/509382/menu.svg"
+            onclick="hideNav()"
+            alt=""
+          />
+
+          <div class="nav-sm-view">
+            <a
+              href="https://www.youtube.com/watch?v=fv8qHWIXTfo"
+              target="_blank"
+              >Clases
+            </a>
+            <a
+              href="https://docs.google.com/forms/d/14JVoTxIC1Ssr7HVRkPR-UnP1fIoztmefgfzwhX8gMck/edit"
+              target="_blank"
+              >Contactanos</a
+            >
+          </div>
+        </nav>
+      </header>
+
+      <div class="video-container">
+        <h2>SOMOS UN CLUB COMPROMETIDO</h2>
+        <video src="images/gymvideo.mp4" autoplay loop muted></video>
+      </div>
+
+      <section class="sports">
+        <div class="sport-box-container">
+          <div class="sport-box">
+            <h3>Dancing</h3>
+
+            <p>
+              Fusion motivadora de musica<br />latina e internacional con<br />
+              movimientos unicos y<br />
+              combinaciones dinamicas.
+            </p>
+            <button>+Info</button>
+          </div>
+
+          <div class="sport-box">
+            <h3>Bikers</h3>
+            <p>
+              Las articulaciones no sufren<br />
+              durante los entrenamientos<br />
+              por lo que practicamente cualquier<br />
+              persona puede hacer spinning.
+            </p>
+            <button>+Info</button>
+          </div>
+
+          <div class="sport-box">
+            <h3>Athletics</h3>
+            <p>
+              Obtene la capacidad de<br />
+              realizar una actividad o<br />
+              esfuerzo durante el<br />
+              mayor tiempo posible.
+            </p>
+            <button>+Info</button>
+          </div>
+        </div>
+
+        <div class="sport-box-container">
+          <div class="sport-box">
+            <h3>Nutrition</h3>
+            <p>
+              Nuestro equipo especializado en<br />
+              nutricion te guiara en<br />
+              cada paso de tu rutina proteica<br />
+              corrigiendote para alcanzar tu ideal.
+            </p>
+            <button>+Info</button>
+          </div>
+
+          <div class="sport-box">
+            <h3>Yoggers</h3>
+            <p>
+              Un cuerpo fuerte, flexible<br />
+              y saludable es el<br />
+              resultado de una<br />
+              practica continua.
+            </p>
+            <button>+Info</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="images">
+        <div class="image-container" style="flex-direction: row">
+          <p>
+            Potencia tu rutina de ejercicio, tenemos diagramados distintos
+            planes de exigencia donde sentiras el mas adecuado a tu exigencia.
+            Nuestros profesores te mantendran al tanto de cada nueva tecnologia
+            en lo que refiere al entrenamiento moderno.
+          </p>
+          <img src="images/fondo.jpeg" alt="" />
+        </div>
+
+        <div class="image-container" style="flex-direction: row-reverse">
+          <p>
+            Nuestro profesores estan al tanto de cada nueva tecnologia
+            implementada en el campo del entrenamiento, ellos te mostraran esos
+            avances para hacerte un mejor atleta en tu disciplina.
+          </p>
+          <img src="images/AdobeStock_582792546_Preview.jpeg" alt="" />
+        </div>
+
+        <div class="image-container" style="flex-direction: row">
+          <p>
+            Dentro de nuestro salon de entrenamiento encontraras las ultimas
+            maquinas lanzadas al mercado del Body Fitness, equipos de ultima
+            generacion que evitaran que te lesiones en tu rutina de trabajo
+            extremo.
+          </p>
+          <img src="images/danielle-cerullo-CQfNt66ttZM-unsplash.jpg" alt="" />
+        </div>
+
+        <div class="image-container" style="flex-direction: row-reverse">
+          <p>
+            Cuatro plantas a tu disposicion, la primera todo Crossfit. La
+            segunda todo lo relacionado a pecho, hombro y brazos. La tercera
+            espalda y piernas. La cuarta un spa de lujo te espera para descansar
+            con sauna y masajes reparadores despues de un arduo dia de trabajo.
+          </p>
+          <img src="images/himanshu-gautam-ljcrqsglz_A-unsplash.jpg" alt="" />
+        </div>
+
+        <div class="image-container" style="flex-direction: row">
+          <p>
+            Veni a divertirte con un grupo de gente dispuesta a pasarla bien
+            igual que vos, buscando siempre las interacciones mas sanas,
+            abiertas y con el mejor ambiente deportivo. Te esperamos!
+          </p>
+          <img src="images/AdobeStock_570263311_Preview.jpeg" alt="" />
+        </div>
+      </section>
+
+
+      <section id="compraOnline">
+        <p class="logo">¡Entrena Ya!</p>
+        <img src="./images/Comprasonline.jpg">
+      </section>
+
+
+      <footer id="contact">
+        <h3>SIGUENOS</h3>
+        <div class="contact-form">
+          <h2>Formulario de Contacto</h2>
+          <form
+            action="procesar_formulario.php"
+            method="POST"
+            style="display: none"
+          >
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfydZpV0oGIiUGS21BTwQtWqHmEgKqKotEFXkCmpGydYGLqOw/viewform?embedded=true"
+            frameborder="0"
+            width="600px"
+            height="1200px"
+            marginheight="0"
+            marginwidth="0"
+            >Cargando…</iframe
+          >
+        </div>
+
+        <div class="box">
+          <div class="red-social">
+            <a
+              href="https://www.facebook.com/profile.php?id=100054447971631"
+              target="_blank"
+              >&#x2713;FACEBOOK</a
+            >
+            <a
+              href="https://www.instagram.com/streetgymluzuriaga/"
+              target="_blank"
+              >&#x2713;INSTAGRAM</a
+            >
+            <a
+              href="https://www.youtube.com/watch?v=7Hobm5Sp7WU"
+              target="_blank"
+              >&#x2713;YOUTUBE</a
+            >
+          </div>
+        </div>
+        <p>© EntrenaYa 2023</p>
+      </footer>
+    </div>
+
+    <script>
+      function hideNav() {
+        document.querySelector(".nav-sm-view").classList.toggle("hide");
+      }
+    </script>
+  </body>
+</html>
