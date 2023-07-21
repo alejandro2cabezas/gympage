@@ -158,17 +158,17 @@
         </div>
       </section>
 
-
-      <section id="compraOnline">
+      <div
+        id="compraOnline"
+        class="image-container"
+        style="flex-direction: column"
+      >
         <p class="logo">¡Entrena Ya!</p>
-        <img src="./images/Comprasonline.jpg">
-      </section>
-
+        <img src="./images/Comprasonline.jpg" />
+      </div>
 
       <footer id="contact">
-        <h3>SIGUENOS</h3>
         <div class="contact-form">
-          <h2>Formulario de Contacto</h2>
           <form
             action="procesar_formulario.php"
             method="POST"
@@ -190,10 +190,9 @@
           </form>
 
           <iframe
+            class="google-form"
             src="https://docs.google.com/forms/d/e/1FAIpQLSfydZpV0oGIiUGS21BTwQtWqHmEgKqKotEFXkCmpGydYGLqOw/viewform?embedded=true"
             frameborder="0"
-            width="600px"
-            height="1200px"
             marginheight="0"
             marginwidth="0"
             >Cargando…</iframe
@@ -201,6 +200,7 @@
         </div>
 
         <div class="box">
+          <h3 style="text-align: center; margin-bottom: 18px">SIGUENOS</h3>
           <div class="red-social">
             <a
               href="https://www.facebook.com/profile.php?id=100054447971631"
@@ -219,13 +219,16 @@
             >
           </div>
         </div>
-        <p>© EntrenaYa 2023</p>
+        <p style="text-align: center">© EntrenaYa 2023</p>
       </footer>
     </div>
 
     <script>
+      const mobileNav = document.querySelector(".nav-sm-view");
+      mobileNav.classList.add("hide");
+
       function hideNav() {
-        document.querySelector(".nav-sm-view").classList.toggle("hide");
+        mobileNav.classList.toggle("hide");
       }
     </script>
   </body>
