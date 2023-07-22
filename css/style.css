@@ -205,12 +205,6 @@ footer h3 {
   border-radius: 7px 7px;
 }
 
-img {
-  transition: all 0.3s ease-in-out;
-  width: 640px;
-  margin: 18px auto;
-}
-
 .video-container {
   position: relative;
 }
@@ -262,6 +256,7 @@ img {
 .google-form{
   width: 800px !important;
   height: 1200px !important;
+  border:none;
 }
 
 @media (max-width: 1550px) {
